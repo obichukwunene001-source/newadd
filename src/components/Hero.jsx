@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom'
+import bgImage from '../assets/yellow.jpg';
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <section className="grid gap-4 bg-[url('./src/assets/yellow.jpg')] relative items-center bg-cover min-h-screen ">
+    <section className="grid gap-4  relative items-center bg-cover min-h-screen " style={{ backgroundImage: `url(${bgImage})` }}>
        <div className="ml-2 md:text-5xl text-3xl font-bold flex flex-col p-20 text-white -mt-20">
         <div className="bg-yellow-900/20 -ml-9 pl-0 pr-16">
         <span><h1 className="text-yellow-200"><span className="text-6xl">T</span>IMELESS CLOTHING PIECE</h1></span>
