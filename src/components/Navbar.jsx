@@ -10,7 +10,7 @@ const Navbar = () => {
             <nav className="hidden md:flex gap-7  md:pr-9 pr-5">
                 <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
                   <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
-                <NavLink to="/about" onClick={() => setIsOpen(false)}>Testimonials</NavLink>
+                <NavLink to="/products" onClick={() => setIsOpen(false)}>Products</NavLink>
                 <NavLink to="/about" onClick={() => setIsOpen(false)}>Account</NavLink>
             </nav>
         <button className={`md:hidden ${isOpen ? 'fixed z-50 top-9 right-5': ''}`} onClick={()=> setIsOpen(!isOpen)}>
@@ -21,7 +21,7 @@ const Navbar = () => {
          top-0 transform transition-transform duration-500 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
            <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
              <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
-             <NavLink to="/about" onClick={() => setIsOpen(false)}>Testimonials</NavLink>
+             <NavLink to="/products" onClick={() => setIsOpen(false)}>Products</NavLink>
              <NavLink to="/about" onClick={() => setIsOpen(false)}>Account</NavLink>
                
         </nav>

@@ -72,3 +72,22 @@ nav a.active {
   text-decoration-color: lightyellow;
   
 }
+.under {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.under a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(59,130,246,0.9); /* blue-500 */
+  color: inherit;
+  font-weight: 600;
+}
+.under a:hover {
+  text-decoration-color: rgba(250,204,21,0.95); /* yellow-400 */
+}
